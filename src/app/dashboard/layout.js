@@ -1,69 +1,18 @@
 "use client";
-import React from "react";
-import "./dashboard.css";
 import { CiSearch } from "react-icons/ci";
-import { MdOutlineDateRange, MdOutlinePersonOutline } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import { RiHome5Line } from "react-icons/ri";
-import { IoDocumentText } from "react-icons/io5";
-import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { MdOutlineDateRange } from "react-icons/md";
+import "./dashboard.css";
 
-import { MdAnalytics } from "react-icons/md";
-import { MdOutlineSmartDisplay } from "react-icons/md";
-import { MdNotificationsNone } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5";
 
-const sidebarData = [
-  {
-    icon: <RiHome5Line />,
-    text: "Dashboard",
-  },
-  {
-    icon: <IoDocumentText />,
-    text: "Content",
-  },
-  {
-    icon: <MdOutlinePersonOutline />,
-    text: "Team",
-  },
-  {
-    icon: <HiOutlineDesktopComputer />,
-    text: "Dashboard",
-  },
-  {
-    icon: <MdAnalytics />,
-    text: "Dashboard",
-  },
-  {
-    icon: <MdOutlineSmartDisplay />,
-    text: "Dashboard",
-  },
-  {
-    icon: <MdNotificationsNone />,
-    text: "Dashboard",
-  },
-  {
-    icon: <IoSettingsOutline />,
-    text: "Dashboard",
-  },
-];
+ 
 
 const Layout = ({ children }) => {
   return (
     <div className="dashboard">
-      <div className="sidebar">
-        <div className="options">
-          {sidebarData.map((i) => (
-            <div className="option">
-              {i.icon}
-              <p> {i.text} </p>
-            </div>
-          ))}
-        </div>
-      </div>
       <div className="heading">
         <div className="input">
-          <CiSearch size={20} color="#CECECE" />
+          <CiSearch size={20} color="#a0a3bd" />
           <input type="text" placeholder="Search" className="search" />
         </div>
         <div className="right-box">
@@ -83,6 +32,8 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
+      
+
       {children}
     </div>
   );
