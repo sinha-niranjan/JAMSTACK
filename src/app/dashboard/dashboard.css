@@ -1,0 +1,130 @@
+.dashboard {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 15vw;
+  height: 100vh;
+  border: 1px solid blue;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 170px;
+  height: 55px;
+}
+
+.option > svg {
+  font-size: 24px;
+  color: #212121;
+}
+
+.option > p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #53545c;
+}
+.heading {
+  width: 85vw;
+  height: 100px;
+  border: 1px solid blue;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+
+  width: 400px;
+  height: 51px;
+  margin-left: 3rem;
+}
+
+.input > svg {
+  z-index: 10;
+  margin: 0.5rem;
+  position: fixed;
+}
+
+.search {
+  width: 400px;
+  height: 51px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  color: #cecece;
+  border-radius: 20px;
+  border: none;
+  background-color: #fcfcfd;
+}
+
+.right-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.date-box {
+  border: 1px solid #a0a3bd;
+  width: 175px;
+  height: 54px;
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-box > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-right: 0.5rem;
+  color: #313145;
+}
+
+.user-details {
+  border: 1px solid #a0a3bd;
+  width: 250px;
+  height: 54px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-details > img {
+  height: 35px;
+  width: 35px;
+}
+
+.user-details > div > p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #373b5c;
+}
+
+.user-details > div > h3 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #373b5c;
+}
