@@ -228,8 +228,8 @@ const Dashboard = () => {
                   <p>Why Branding matters for your Business</p>
                 </div>
                 <div className="article-content-fourth">
-                  {i.fourth.map((item) => (
-                    <p>{item}</p>
+                  {i.fourth.map((item,ind) => (
+                    <p key={ind*4}>{item}</p>
                   ))}
                 </div>
                 <div className="article-content-fifth">
@@ -245,8 +245,8 @@ const Dashboard = () => {
           <p>See all</p>
         </div>
         <div className="stories">
-          {array.map((i) => (
-            <div className="story" key={i}>
+          {array.map((i,ind) => (
+            <div className="story" key={ind*100}>
               <img src="https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A1MYJeatG66NDI-1tvg9e8PHf~etrR-ZNzrDT0QymvzSArV161hJtHsc0qWG2~Arnp~4BhQxNc90VWgaLZYEM2c-fmxCLF4e3V7xVjrLlPNGdtHyoceOqepNCY3pdX5pArgw2zO~PQcUe5ZvxXTiYD5Oq-ZunycV9RsD2iYHyjV9Qipp~qxgm4qUcrL9sFLt7HcafNd1LkT2V4hhN0Kh50uPayQHf277SegRIkH6Sr4V7m2Tv6ZYn7aeLOaNhIJz2vJmxP14NMNnj08b43sT~mYGWPHOazqOUWk7xcJSn-OUHTpTlAPZa-xrm7DrUsktaYgJ~Ccr2l-GlRq9xvirDQ__" />
 
               <div className="story-content">
@@ -282,6 +282,10 @@ const Dashboard = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="types-heading">
+          <h2>Advertisment</h2>
+          <p>See all</p>
         </div>
         <div className="advertisment"></div>
       </div>
